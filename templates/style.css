@@ -1,0 +1,323 @@
+ *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+ }
+
+        body {
+           display: block;
+            height: 100vh;
+            background-color: #1F231A;
+        }
+
+
+        nav {
+            background-color: #170e37; /* Couleur de fond de la barre de navigation */
+            color: #fff; /* Couleur du texte dans la barre de navigation */
+            padding: 0px;
+            height: 10%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+        nav img{
+         width: 10%;
+         height: 100%;
+        }
+        nav div{
+            width: 10%;
+            height: 100%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            display: flex;
+          color:  #fff;align-items: center;
+          justify-content: center;
+           }
+
+        nav a {
+            color: #fff; /* Couleur des liens dans la barre de navigation */
+            text-decoration: none;
+            margin: 0 10px; /* Marge entre les liens */
+        }
+        .page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+            /* background-image: url('../static/game.jpeg'); Chemin de l'image */
+            background-size: cover; /* Ajuster la taille pour couvrir complètement le conteneur */
+            background-position: center; /* Centrer l'image */
+        }
+        
+
+        .page .all {
+            width: 70%;
+            height: 60%;
+            background-image: url('../static/bk.jpg');
+            margin-top: 40px;
+            border-radius: 40px; /* ajustez la valeur selon votre préférence */
+            padding: 20px; /* Ajustez la marge intérieure pour plus d'espace */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ombre pour le style */
+            color: #fff; /* couleur du texte */
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page .all .a2{
+            width: 20%;
+            height: 90%;
+            margin-top: 10px;
+            border-radius: 40px; /* ajustez la valeur selon votre préférence */
+            margin-bottom: 10px;
+            margin-right: 10px;
+            background-image: url('../static/game1.avif'); /* Chemin de l'image */
+            background-size: cover; /* Ajuster la taille pour couvrir complètement le conteneur */
+            background-position: center; /* Centrer l'image */
+            display: flex;
+            justify-content: center;
+            align-items: right;
+
+
+        }
+        .page .all .a1{
+            width: 70%;
+            height: 90%;
+            border-radius: 40px; /* ajustez la valeur selon votre préférence */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            background: rgb(93,28,128);
+            background: linear-gradient(0deg, rgba(93,28,128,1) 24%, rgba(127,25,198,1) 65%);
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items: center;
+        }
+
+        .page .all .a1 h2 {
+            font-size: 24px; /* Taille de la police pour le titre */
+            margin-top: 40px;
+
+            margin-bottom: 20px; /* Marge en bas du titre */
+            color:#09cbde; /* Couleur du texte pour le titre */
+        }
+
+        .page .all .a1 form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            height: 60%;display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .page .all .a1 form input[type="file"] {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            margin-top: 30px;
+
+            align-items: center;
+            height: 90%;
+            width: 50%;
+        }
+
+        .page .all .a1 form .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 40%;
+            height: 40%;
+        }
+
+        .page .all .a1 form .button-85:before {
+            content: "";
+        background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+        }
+        .page .all .a1 form .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+
+@keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  .page .all1 {
+    width: 90%;
+    height: 90%;
+    background-color: #151712;
+    margin-top: 20px;
+    border-radius: 40px; /* ajustez la valeur selon votre préférence */
+    padding: 20px; /* Ajustez la marge intérieure pour plus d'espace */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ombre pour le style */
+    color: #fff; /* couleur du texte */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .all1 .p1{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.page .all1 .p1 h2{
+    margin-top: 10px;
+    width: 20%;
+    height: 10%;
+
+}
+.page .all1 .p1 img{
+    max-width: 100%;
+    max-height: 400px;
+    margin-top: 10px;
+}
+
+#uploadSection, #resultSection {
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+#uploadSection {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#uploadSection:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#resultSection {
+    display: none;
+    margin-top: 20px;
+}
+#resultImage {
+    max-width: 100%;
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+}
+#resultImage:hover {
+    transform: scale(1.1);
+}
+#recommendedImages {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.recommendedImage {
+    margin: 0 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+}
+.recommendedImage:hover {
+    transform: scale(1.1);
+}
+.uploadIcon {
+    font-size: 36px;
+    color: #3498db;
+}
+.button-62 {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-top:25px;
+  }
+
+  .button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+
+  .button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
